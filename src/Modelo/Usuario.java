@@ -1,6 +1,6 @@
 package Modelo;
 
-public class Usuario {
+public class Usuario implements elementoModelo{
 
     private int idUsuario;
     private String nombre;
@@ -42,5 +42,25 @@ public class Usuario {
 
     public void setLogin(Login login) {
         this.login = login;
+    }
+
+    @Override
+    public String getInsertString() {
+        return null;
+    }
+
+    @Override
+    public String getUpdateString() {
+        return null;
+    }
+
+    @Override
+    public String getDeleteString() {
+        return null;
+    }
+
+    @Override
+    public int getIdFromDB() {
+        return 0;
     }
 }
