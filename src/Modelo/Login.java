@@ -2,7 +2,6 @@ package Modelo;
 
 public class Login {
     private int idLogin;
-
     private String nombreUsuario;
     private String contraseña;
 
