@@ -1,6 +1,5 @@
 package Modelo;
-
-public class Login  implements elementoModelo{
+public class Login  implements elementoModelo {
     private int idLogin;
     private String nombreUsuario;
     private String contraseña;
