@@ -41,17 +41,12 @@ public class Login  implements elementoModelo{
 
     @Override
     public String getInsertString() {
-        return null;
-    }
-
-    @Override
-    public String getUpdateString() {
-        return null;
+        return "INSERT INTO logins (nombre_usuario, contraseña) VALUES ('" + this.nombreUsuario + "', '" + this.contraseña + "');";
     }
 
     @Override
     public String getDeleteString() {
-        return null;
+        return "DELETE FROM logins WHERE idLogin = " + getIdFromDB() + ";";
     }
 
     @Override

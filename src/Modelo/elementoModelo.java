@@ -9,4 +9,5 @@ public interface elementoModelo {
     public String getDeleteString();
 
     public int getIdFromDB();
+
 }

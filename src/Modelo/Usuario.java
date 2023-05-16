@@ -46,17 +46,11 @@ public class Usuario implements elementoModelo{
 
     @Override
     public String getInsertString() {
-        return null;
+        return "INSERT INTO usuarios (nombre, idLogin) VALUES ('" + this.nombre + "', " + this.login.getIdLogin() + ");";
     }
-
-    @Override
-    public String getUpdateString() {
-        return null;
-    }
-
     @Override
     public String getDeleteString() {
-        return null;
+        return "DELETE FROM usuarios WHERE idUsuario = " + getIdFromDB() + ";";
     }
 
     @Override
